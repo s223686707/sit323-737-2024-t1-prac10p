@@ -1,7 +1,7 @@
-FROM node:18.17.0
+FROM --platform=linux/amd64 node:11.15
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
